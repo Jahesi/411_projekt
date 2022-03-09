@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -28,12 +28,12 @@ public class Main {
         int[][] endPos = new int[endX][endY];
 
         //Spielfeld struktur 4x4
-        int[][] spielfeld = new int[3][3];
+        int[][] spielfeld = new int[4][4];
 
-        //Pfadmatrix init, speichert array
 
         //FnW Algo
-
+        FloydWarshall a = new FloydWarshall();
+        a.floydWarshall(spielfeld);
         //Ausagbe des Pfades in coordinaten der Nodes
     }
 }
@@ -44,7 +44,7 @@ public class Main {
         final static int INF = 9999, nV = 4;
 
         // Implementing floyd warshall algorithm
-        void floydWarshall(int graph[][]) {
+        void floydWarshall(int[][] graph) {
             int matrix[][] = new int[nV][nV];
             int i, j, k;
 
@@ -61,5 +61,6 @@ public class Main {
                     }
                 }
             }
+            System.out.print(Arrays.deepToString(graph));
         }
 }
