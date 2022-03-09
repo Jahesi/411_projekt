@@ -1,13 +1,18 @@
 -- Auswahl des Algorithmus
+	Algorithmus von Floyd und Warshall
 
 
 -- Anwendung
-
+	Es soll der Kürzeste weg von Punkten auf einem 4x4 (0,0 bis 3,3) Spielfeld gefunden werden.
+	So, dass sich eine theoretische Spielfigur auf dem kürzeszen Weg über ein Spiel
+	bewegt und dabei nicht umwege geht. Dies kann in Zukunft verwendet werden um ein Spiel zu entwickeln und Bewegungspfade zu optimieren.
+	
 
 -- Reflextion Korrektheit
-
+	Der Algorithmus kombiniert die Möglichkeiten zur Wegfindung und zum Speichern des Pfades. So ist dieser gut dazugeeigenet dynamisch eingesetzt zu werden. Die gespeicherten Pfade lassen sich weiter verarbeiten. 
 
 -- Reflextion Effizenz
-
+	Floyd und Warshall eignet sich besonders, weil er immer nur paare vergleicht und die der Paare in einer Matrix ablege und in dieser Matrix, dann die Koordinaten abgelegt werden, welche den Kürzesten Pfad ergeben.
+	So kann man auch Pfade länger Speichern, sollte in meinem Beispiel die Figur zurück bewegt werden.
 
 -- Reflextion Komplexität
