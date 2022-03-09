@@ -1,0 +1,13 @@
+-- Auswahl des Algorithmus
+
+
+-- Anwendung
+
+
+-- Reflextion Korrektheit
+
+
+-- Reflextion Effizenz
+
+
+-- Reflextion Komplexität
