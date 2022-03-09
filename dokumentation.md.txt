@@ -3,9 +3,8 @@
 
 
 -- Anwendung
-	Es soll der Kürzeste weg von Punkten auf einem 4x4 (0,0 bis 3,3) Spielfeld gefunden werden.
-	So, dass sich eine theoretische Spielfigur auf dem kürzeszen Weg über ein Spiel
-	bewegt und dabei nicht umwege geht. Dies kann in Zukunft verwendet werden um ein Spiel zu entwickeln und Bewegungspfade zu optimieren.
+	Es soll der Kürzeste weg von Punkten auf einem 4x4 (0,0 bis 3,3) Spielfeld gefunden werden, egal ob horizinal, vertikal oder diagonal.
+	So, dass sich eine theoretische Spielfigur auf dem kürzeszen Weg über ein Spielfeld bewegt und dabei nicht umwege geht. Dies kann in Zukunft verwendet werden um ein Spiel zu entwickeln und Bewegungspfade zu optimieren.
 	
 
 -- Reflextion Korrektheit
@@ -16,3 +15,4 @@
 	So kann man auch Pfade länger Speichern, sollte in meinem Beispiel die Figur zurück bewegt werden.
 
 -- Reflextion Komplexität
+	Laut Wikipedia ergibt sich aus der Errechnung des kürzeszen Pfades eine Komplexität von n * n^2 = 2n^3. n gibt dabei die anzahl der Punkte im Pfad an. 2n^3 scheint eine relativ einfache und kurze Berechnungsdauer zu haben.

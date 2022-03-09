@@ -1,13 +1,16 @@
+import java.lang.reflect.Array;
+
 public class Main {
     public static void main(String[] args) {
 
+
         //Eingabe lesen
 
-        //Spielfeld init
+
+        //Spielfeldpos init
 
         //Spielfeld struktur 4x4
-
-
+        int[][] spielfeld = new int[3][3];
 
         //Pfadmatrix init, speichert array
 
@@ -15,4 +18,5 @@ public class Main {
 
         //Ausagbe des Pfades in coordinaten der Nodes
     }
+
 }
